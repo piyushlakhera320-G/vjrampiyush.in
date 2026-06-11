@@ -3,80 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech & Corporate Portfolio | Piyush Lakhera</title>
+    <title>Tech Portfolio | Piyush Lakhera</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background-color: #0a0a0e;
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #00f2fe, #4facfe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        header p {
+            color: #71717a;
+            font-size: 16px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #a1a1aa;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 8px;
+        }
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 50px;
+        }
+        .badge {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #e4e4e7;
+            transition: all 0.3s ease;
+        }
+        .badge:hover {
+            background: rgba(0, 242, 254, 0.05);
+            border-color: #00f2fe;
+            color: #00f2fe;
+            box-shadow: 0 0 15px rgba(0, 242, 254, 0.2);
+            transform: translateY(-2px);
+        }
+        .project-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+        }
+        .project-card h3 {
+            font-size: 18px;
+            color: #f4f4f5;
+            margin-bottom: 10px;
+        }
+        .project-card p {
+            color: #a1a1aa;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            color: #71717a;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back-btn:hover {
+            color: #ffffff;
+        }
+    </style>
 </head>
-<body style="background-color: #121212; color: #ffffff; font-family: sans-serif; margin: 0; padding: 0;">
+<body>
 
-    <!-- Top Header Area -->
-    <header style="text-align: center; padding: 40px 20px; background-color: #1a1a1a; border-bottom: 1px solid #222;">
-        <h1 style="margin: 0; font-size: 30px; color: #ffffff; letter-spacing: 1px;">
-            💻 TECH & CORPORATE PORTFOLIO
-        </h1>
-        <p style="color: #3498db; font-size: 16px; margin: 8px 0 15px 0; font-weight: bold;">
-            Education, Skills & Technical Journey
-        </p>
-        <a href="index.html" style="color: #e74c3c; text-decoration: none; font-size: 14px; font-weight: bold; border: 1px solid #e74c3c; padding: 5px 15px; border-radius: 4px; display: inline-block; transition: 0.3s;">
-            ← Back to Main Hub
-        </a>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Technical Portfolio</h1>
+            <p>Computer Science & Internet of Things (CSIOT)</p>
+        </header>
 
-    <!-- Main Content Container -->
-    <div style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
-
-        <!-- 1. Education Section Card -->
-        <div style="background-color: #1e1e1e; padding: 25px; border-radius: 8px; margin-bottom: 25px; border-left: 4px solid #3498db; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
-            <h2 style="margin-top: 0; color: #3498db; font-size: 20px; display: flex; align-items: center;">
-                🎓 Education Details
-            </h2>
-            <hr style="border: 0; border-top: 1px solid #333; margin: 12px 0;">
-            <h3 style="color: #ffffff; margin: 0 0 5px 0; font-size: 18px;">Bachelor of Technology (B.Tech)</h3>
-            <p style="color: #e67e22; margin: 0 0 10px 0; font-weight: bold; font-size: 14px;">
-                Specialization: Computer Science and Internet of Things (CSIOT)
-            </p>
-            <p style="color: #cccccc; font-size: 15px; line-height: 1.6; margin: 0;">
-                Currently learning and implementing core concepts of programming, web development, and hardware-software integration.
-            </p>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+            <div class="badge">HTML5</div>
+            <div class="badge">CSS3</div>
+            <div class="badge">JavaScript</div>
+            <div class="badge">Internet of Things (IoT)</div>
+            <div class="badge">Git & GitHub</div>
         </div>
 
-        <!-- 2. Technical Skills Section Card -->
-        <div style="background-color: #1e1e1e; padding: 25px; border-radius: 8px; margin-bottom: 25px; border-left: 4px solid #2ecc71; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
-            <h2 style="margin-top: 0; color: #2ecc71; font-size: 20px;">
-                🛠️ Technical Skills
-            </h2>
-            <hr style="border: 0; border-top: 1px solid #333; margin: 12px 0;">
-            
-            <ul style="list-style-type: none; padding-left: 0; margin: 0; font-size: 15px; line-height: 1.8;">
-                <li style="margin-bottom: 10px;">
-                    <strong style="color: #ffffff;">🔹 Languages:</strong> 
-                    <span style="color: #cccccc;">Core Java, HTML5, CSS3 (Learning Phase)</span>
-                </li>
-                <li style="margin-bottom: 10px;">
-                    <strong style="color: #ffffff;">🔹 Core Domains:</strong> 
-                    <span style="color: #cccccc;">Internet of Things (IoT), Basic Networking Concepts</span>
-                </li>
-                <li style="margin-bottom: 0;">
-                    <strong style="color: #ffffff;">🔹 Developer Tools:</strong> 
-                    <span style="color: #cccccc;">VS Code, Git & GitHub (version control system  )</span>
-                </li>
-            </ul>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-card">
+            <h3>Personal Developer Hub</h3>
+            <p>A minimalist, high-performance developer portfolio built from scratch.</p>
         </div>
 
-        <!-- 3. Learning Goals Section Card -->
-        <div style="background-color: #1e1e1e; padding: 25px; border-radius: 8px; margin-bottom: 40px; border-left: 4px solid #f1c40f; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
-            <h2 style="margin-top: 0; color: #f1c40f; font-size: 20px;">
-                🚀 Learning Goals
-            </h2>
-            <hr style="border: 0; border-top: 1px solid #333; margin: 12px 0;">
-            <p style="color: #cccccc; font-size: 15px; line-height: 1.6; margin: 0;">
-                Building a strong foundation in computer science while exploring the intersection of IoT hardware and interactive software. This multi-page website is my first hands-on practical project in front-end development.
-            </p>
-        </div>
-
-        <!-- Footer Footer -->
-        <footer style="text-align: center; border-top: 1px solid #222; padding-top: 20px; color: #555; font-size: 12px;">
-            © 2026 Tech Space Portfolio. All Rights Reserved.
-        </footer>
-
+        <a href="index.html" class="back-btn">← Back to Main Hub</a>
     </div>
 
 </body>

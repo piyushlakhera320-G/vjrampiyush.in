@@ -1,79 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="VuKK5TO2QucuDRcuTo_WMwHdcjzIAMqW3-ngmCeWQRw" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PIYUSH LAKHERA | Official Portfolio</title>
-  <meta name="description" content="Official Portfolio of Piyush Lakhera (VJ Ram). B.Tech CSIOT Student, Web Developer, and Professional Event Visual Jockey based in Jabalpur.">
-    <meta name="keywords" content="Piyush Lakhera, VJ Ram, Piyush Lakhera Jabalpur, vjrampiyush, Web Developer Jabalpur, Visual Jockey India, Resolume Arena VJ">
-    <meta name="author" content="Piyush Lakhera">
-    <link rel="stylesheet" href="style.css">
+    <title>Piyush Lakhera | Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background: radial-gradient(circle at top right, #14141e, #08080c);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .main-container {
+            max-width: 650px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* DIGITAL CLOCK STYLE */
+        .digital-clock {
+            font-size: 32px;
+            font-weight: 300;
+            color: #8a8f98;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .live-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #00f2fe;
+            border-radius: 50%;
+            margin-right: 8px;
+            box-shadow: 0 0 10px #00f2fe;
+            animation: blink 1.5s infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0.3; }
+        }
+
+        /* PHILOSOPHY TEXT STYLE */
+        .philosophy-box {
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+        .philosophy-text {
+            font-size: 16px;
+            font-weight: 400;
+            color: #a1a1aa;
+            letter-spacing: 0.5px;
+        }
+
+        /* INTERACTIVE GRID BOXES STYLE */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        @media (max-width: 500px) {
+            .grid-container { grid-template-columns: 1fr; }
+        }
+
+        .feature-box {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 30px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #ffffff;
+            display: block;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Tech Box Hover Effect */
+        .tech-box:hover {
+            border-color: #4facfe;
+            background: rgba(79, 172, 254, 0.03);
+            box-shadow: 0 10px 30px rgba(79, 172, 254, 0.15);
+            transform: translateY(-5px);
+        }
+        /* Event Box Hover Effect */
+        .event-box:hover {
+            border-color: #8b5cf6;
+            background: rgba(139, 92, 246, 0.03);
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .box-icon {
+            font-size: 24px;
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+        .box-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+        .tech-box .box-title { color: #00f2fe; }
+        .event-box .box-title { color: #d946ef; }
+
+        .box-desc {
+            font-size: 13px;
+            color: #71717a;
+            line-height: 1.4;
+        }
+
+        /* LET'S CONNECT ACTION BUTTON STYLE */
+        .contact-btn {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 35px;
+            border-radius: 14px;
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            transition: all 0.2s ease;
+        }
+        .contact-btn:hover {
+            background: #ffffff;
+            color: #000000;
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
-<body style="background-color: #121212; color: #ffffff; font-family: sans-serif; margin: 0; padding: 0;">
- <header style="text-align: center; padding: 40px 20px;">
-        <p style="font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: #3498db; margin-bottom: 5px; font-weight: bold;">
-            📌 Welcome to my Official Space
-        </p>
-        <h1 style="margin-top: 0; font-size: 36px; letter-spacing: 1px; color: #ffffff;">PIYUSH LAKHERA</h1>
-        <p style="color: #bbb; font-size: 16px;">Technical Visual Manager & Developer</p>
-    </header>
+<body>
 
-    <!-- Main Container Box (Pehle ye white tha, ab iska background transparent kar diya taaki black page se match ho) -->
-    <div class="container" style="text-align: center; padding: 20px; max-width: 800px; margin: 0 auto; background-color: transparent;">
-        
-        <h2 style="color: #ffffff; border-bottom: 1px solid #333; padding-bottom: 15px;">Choose Your Destination</h2>
-        <p style="color: #cccccc;">Select what you are looking for:</p>
+    <div class="main-container">
+        <!-- Live Clock Feature -->
+        <div class="digital-clock">
+            <span class="live-dot"></span><span id="clock">00:00:00 AM</span>
+        </div>
 
-        <!-- Buttons Section -->
-        <div style="margin-top: 30px;">
-            <!-- Tech Portfolio ka Button -->
-            <a href="tech.html" style="display: inline-block; padding: 15px 30px; margin: 10px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-                💻 Tech & Corporate Resume
+        <!-- Main Philosophy -->
+        <div class="philosophy-box">
+            <p class="philosophy-text">"I don't care about popularity, I live in reality."</p>
+        </div>
+
+        <!-- NEW JAVASCRIPT FEATURE DISPLAY HOOKS -->
+        <!-- script.js ka data automatic in dono lines me aakar chhapega -->
+        <h2 id="welcome-greeting" style="font-size: 20px; color: #ffffff; margin-bottom: 8px; font-weight: 500;">Welcome</h2>
+        <p id="dynamic-fact" style="font-size: 14px; color: #71717a; font-style: italic; margin-bottom: 30px;"></p>
+
+        <!-- Interactive Grid Boxes -->
+        <div class="grid-container">
+            <!-- Tech Box -->
+            <a href="tech.html" class="feature-box tech-box">
+                <span class="box-icon">💻</span>
+                <div class="box-title">Tech Portfolio</div>
+                <div class="box-desc">Explore coding projects, CSIOT systems, and technical skills.</div>
             </a>
 
-            <!-- Event Portfolio ka Button -->
-            <a href="event.html" style="display: inline-block; padding: 15px 30px; margin: 10px; background-color: #e74c3c; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-                🎬 VJ & Event Portfolio
+            <!-- Event Box -->
+            <a href="event.html" class="feature-box event-box">
+                <span class="box-icon">⚡</span>
+                <div class="box-title">Event Hub</div>
+                <div class="box-desc">Discover live visual production, VJ setups, and stage execution.</div>
             </a>
         </div>
 
-        <br><br>
-        
-        <!-- Philosophy Section (Ab kaale background par saaf dikhega) -->
-        <h2 style="color: #ffffff; margin-top: 40px;">My Philosophy</h2>
-        <p style="font-style: normal; font-size: 16px; color: #cccccc; margin-bottom: 40px;">
-            "I don't care about popularity, I live in reality."
-        </p>
-
-        <!-- Contact Footer Section (RGPV Style Solid Blue Contact Box) -->
-        <hr style="border: 0; border-top: 1px solid #333; margin-top: 50px;">
-
-        <div style="background-color: #1a237e; color: white; max-width: 500px; margin: 30px auto; padding: 25px; border-radius: 8px; text-align: left; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
-            
-            <h3 style="color: white; margin-top: 0; margin-bottom: 20px; font-size: 22px; border-bottom: 2px solid #3498db; padding-bottom: 8px;">Contact Us</h3>
-            
-            <p style="margin: 15px 0; font-size: 16px; display: flex; align-items: center;">
-                <span style="font-size: 20px; margin-right: 12px;">📧</span> 
-                <strong>Email: </strong> 
-                <a href="mailto:piyushlakhera315@gmail.com" style="color: white; text-decoration: none; font-weight: bold; margin-left: 5px;">piyushlakhera315@gmail.com</a>
-            </p>
-            
-            <p style="margin: 15px 0; font-size: 16px; display: flex; align-items: center;">
-                <span style="font-size: 20px; margin-right: 12px;">📞</span> 
-                <strong>Phone: </strong> 
-                <a href="tel:+918103364914" style="color: white; text-decoration: none; font-weight: bold; margin-left: 5px;">+91 81033 64914</a>
-            </p>
-            
-        </div>
-
-        <!-- Copyright Line -->
-        <div style="text-align: center;">
-            <p style="font-size: 12px; margin-top: 30px; color: #666;">
-                © 2026 Web-Space Owner & Technical Manager. All Rights Reserved.
-            </p>
-        </div>
-
+        <!-- Clean Connect Button -->
+        <a href="mailto:piyushlakhera320@gmail.com" class="contact-btn">Let's Connect</a>
     </div>
 
+    <!-- Clock JavaScript Script (Inside Page) -->
+    <script>
+        function updateClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+            hours = String(hours).padStart(2, '0');
+
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds} ${ampm}`;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+
+    <!-- CONNECTING OUR EXTERNAL SCRIPT.JS FILE FOR SMART GREETING & TECH FACTS -->
+    <script src="script.js"></script>
 </body>
+</html>

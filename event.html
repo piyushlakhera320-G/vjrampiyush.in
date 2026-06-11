@@ -3,72 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VJ & Event Portfolio | Piyush Lakhera</title>
+    <title>Event Portfolio | Piyush Lakhera</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background-color: #09090b;
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #d946ef, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        header p {
+            color: #71717a;
+            font-size: 16px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #a1a1aa;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 8px;
+        }
+        .expertise-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .expertise-card:hover {
+            border-color: rgba(217, 70, 239, 0.3);
+            transform: translateY(-2px);
+        }
+        .expertise-card h3 {
+            font-size: 19px;
+            color: #f4f4f5;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .expertise-card p {
+            color: #a1a1aa;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        .highlight-text {
+            color: #d946ef;
+            font-weight: 600;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            color: #71717a;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back-btn:hover {
+            color: #ffffff;
+        }
+    </style>
 </head>
-<body style="background-color: #0c0c0e; color: #ffffff; font-family: sans-serif; margin: 0; padding: 0;">
+<body>
 
-    <!-- Top Dynamic Header Area -->
-    <header style="text-align: center; padding: 50px 20px; background-color: #121216; border-bottom: 2px solid #9b59b6; box-shadow: 0 4px 15px rgba(155,89,182,0.2);">
-        <h1 style="margin: 0; font-size: 32px; color: #ffffff; letter-spacing: 2px;">
-            🎬 VJ & EVENT PORTFOLIO
-        </h1>
-        <p style="color: #9b59b6; font-size: 16px; margin: 8px 0 15px 0; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">
-            Live Visuals, Stage Management & Production
-        </p>
-        <a href="index.html" style="color: #e74c3c; text-decoration: none; font-size: 14px; font-weight: bold; border: 1px solid #e74c3c; padding: 6px 18px; border-radius: 4px; display: inline-block; transition: 0.3s;">
-            ← Back to Main Hub
-        </a>
-    </header>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Event Work Portfolio</h1>
+            <p>Live Visuals & Technical Coordination</p>
+        </header>
 
-    <!-- Main Content Container -->
-    <div style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
-
-        <!-- 1. VJ Expertise Section Card -->
-        <div style="background-color: #16161a; padding: 25px; border-radius: 8px; margin-bottom: 25px; border-left: 4px solid #9b59b6; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-            <h2 style="margin-top: 0; color: #9b59b6; font-size: 20px; display: flex; align-items: center;">
-                🌌 Visual Jockey (VJ) Expertise
-            </h2>
-            <hr style="border: 0; border-top: 1px solid #2a2a32; margin: 12px 0;">
-            <p style="color: #cccccc; font-size: 15px; line-height: 1.6; margin: 0;">
-                Specializing in operating professional visual jockey software like <strong>Resolume Arena 7</strong> to deliver high-energy, real-time live graphics, loops, and effects tailored perfectly to the beat.
-            </p>
+        <!-- Experience Section -->
+        <h2 class="section-title">My Real Work Experiences</h2>
+        
+        <!-- Box 1: VJ Operations -->
+        <div class="expertise-card">
+            <h3><span>🎬</span> Live Visuals & VJ Software</h3>
+            <p>Learning and operating professional software like <span class="highlight-text">Resolume Arena 7</span> to control live visuals and graphics on LED screens for events and shows.</p>
         </div>
 
-        <!-- 2. Event Management Section Card -->
-        <div style="background-color: #16161a; padding: 25px; border-radius: 8px; margin-bottom: 25px; border-left: 4px solid #e74c3c; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-            <h2 style="margin-top: 0; color: #e74c3c; font-size: 20px;">
-                🔥 Event Management & Production
-            </h2>
-            <hr style="border: 0; border-top: 1px solid #2a2a32; margin: 12px 0;">
-            <p style="color: #cccccc; font-size: 15px; line-height: 1.6; margin: 0 0 15px 0;">
-                Experienced event manager handles technical, visual, and logistical coordination for complex, fast-paced live shows, corporate tech festivals, and high-profile stage setups.
-            </p>
-            <div style="background-color: #1f1f26; padding: 12px 15px; border-radius: 5px; border: 1px solid #2a2a32;">
-                <span style="color: #e74c3c; font-weight: bold; font-size: 14px;">⚡ Key Highlight:</span>
-                <p style="color: #aaaaaa; font-size: 14px; margin: 5px 0 0 0;">
-                    Successfully managed visual execution and technical stage flow during major live music events, campus festivals, and official dignitary visits.
-                </p>
-            </div>
+        <!-- Box 2: Technical Work (Jabalpur CM Visit) -->
+        <div class="expertise-card">
+            <h3><span>⚡</span> Technical & Visual Setup (Jabalpur)</h3>
+            <p>Assisted in managing the technical and visual screens setup during the official event for the Chief Minister's visit to Jabalpur.</p>
         </div>
 
-        <!-- 3. Hardware & Gear Proficiency -->
-        <div style="background-color: #16161a; padding: 25px; border-radius: 8px; margin-bottom: 40px; border-left: 4px solid #34495e; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-            <h2 style="margin-top: 0; color: #34495e; font-size: 20px;">
-                ⚙️ Technical Gear Proficiency
-            </h2>
-            <hr style="border: 0; border-top: 1px solid #2a2a32; margin: 12px 0;">
-            <ul style="list-style-type: none; padding-left: 0; margin: 0; font-size: 15px; line-height: 1.8; color: #cccccc;">
-                <li style="margin-bottom: 8px;">✔️ Live Media Servers & Resolume Arena Setup</li>
-                <li style="margin-bottom: 8px;">✔️ LED Wall Mapping & Aspect Ratio Management</li>
-                <li style="margin-bottom: 0;">✔️ Hardware Optimization & High-Performance Rendering Tech</li>
-            </ul>
+        <!-- Box 3: Work Trip (Puri, Odisha) -->
+        <div class="expertise-card">
+            <h3><span>🏗️</span> On-Site Event Work (Puri Project)</h3>
+            <p>Travelled to Puri, Odisha, and worked continuously for 20 days on the ground to manage event production and screen layouts.</p>
         </div>
 
-        <!-- Footer -->
-        <footer style="text-align: center; border-top: 1px solid #222; padding-top: 20px; color: #444; font-size: 12px;">
-            © 2026 VJ & Event Space. All Rights Reserved.
-        </footer>
-
+        <!-- Back to Home Link -->
+        <a href="index.html" class="back-btn">← Back to Main Hub</a>
     </div>
 
 </body>
