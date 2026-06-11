@@ -4,127 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Portfolio | Piyush Lakhera</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-        body {
-            background-color: #0a0a0e;
-            color: #ffffff;
-            min-height: 100vh;
-            padding: 40px 20px;
-        }
-        .container {
-            max-width: 750px;
-            margin: 0 auto;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        header h1 {
-            font-size: 36px;
-            font-weight: 700;
-            background: linear-gradient(135deg, #00f2fe, #4facfe);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
-        }
-        header p {
-            color: #71717a;
-            font-size: 16px;
-        }
-        .section-title {
-            font-size: 18px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #a1a1aa;
-            margin-bottom: 20px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            padding-bottom: 8px;
-        }
-        .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-bottom: 50px;
-        }
-        .badge {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            padding: 8px 16px;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 500;
-            color: #e4e4e7;
-            transition: all 0.3s ease;
-        }
-        .badge:hover {
-            background: rgba(0, 242, 254, 0.05);
-            border-color: #00f2fe;
-            color: #00f2fe;
-            box-shadow: 0 0 15px rgba(0, 242, 254, 0.2);
-            transform: translateY(-2px);
-        }
-        .project-card {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 25px;
-            border-radius: 16px;
-            margin-bottom: 20px;
-        }
-        .project-card h3 {
-            font-size: 18px;
-            color: #f4f4f5;
-            margin-bottom: 10px;
-        }
-        .project-card p {
-            color: #a1a1aa;
-            font-size: 15px;
-            line-height: 1.6;
-        }
-        .back-btn {
-            display: inline-block;
-            margin-top: 30px;
-            color: #71717a;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        .back-btn:hover {
-            color: #ffffff;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background: #020617; color: #ffffff; min-height: 100vh; padding: 40px 20px; }
+        .container { max-width: 800px; margin: 0 auto; text-align: center; }
+
+        header { margin-bottom: 50px; }
+        h1 { font-size: 42px; font-weight: 700; color: #38bdf8; margin-bottom: 8px; }
+        p { color: #94a3b8; font-size: 15px; }
+
+        .section-title { font-size: 17px; font-weight: 600; color: #64748b; text-transform: uppercase; margin: 35px 0 15px 0; border-bottom: 1px solid #1e293b; padding-bottom: 8px; text-align: left; }
+        
+        /* Badges Styling */
+        .skills-container { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 30px; }
+        .skill-badge { background: #0f172a; border: 1px solid #334155; padding: 10px 20px; border-radius: 30px; font-size: 14px; transition: 0.3s; cursor: pointer; }
+        .skill-badge:hover { border: 1px solid #38bdf8; background: #1e293b; box-shadow: 0 0 10px rgba(56, 189, 248, 0.3); }
+
+        /* Projects Grid */
+        .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .project-card { background: #0f172a; border: 2px solid #1e293b; padding: 25px; border-radius: 16px; text-align: left; transition: 0.4s; }
+        .project-card:hover { border: 2px solid #38bdf8; box-shadow: 0 0 20px rgba(56, 189, 248, 0.3); transform: translateY(-5px); }
+        
+        .project-card h3 { color: #ffffff; margin-bottom: 8px; }
+        .project-card p { font-size: 14px; color: #94a3b8; }
+        
+        .back-link { display: inline-block; margin-top: 40px; color: #64748b; text-decoration: none; }
     </style>
 </head>
 <body>
-
     <div class="container">
         <header>
-            <h1>Technical Portfolio</h1>
-            <p>Computer Science & Internet of Things (CSIOT)</p>
+            <h1>Piyush Lakhera</h1>
+            <p>Technical Portfolio — B.Tech Computer Science & Internet of Things</p>
         </header>
 
-        <h2 class="section-title">Skills & Technologies</h2>
-        <div class="skills-grid">
-            <div class="badge">HTML5</div>
-            <div class="badge">CSS3</div>
-            <div class="badge">JavaScript</div>
-            <div class="badge">Internet of Things (IoT)</div>
-            <div class="badge">Git & GitHub</div>
+        <h2 class="section-title">Core Technologies</h2>
+        <div class="skills-container">
+            <div class="skill-badge">HTML5</div>
+            <div class="skill-badge">CSS3</div>
+            <div class="skill-badge">JavaScript</div>
+            <div class="skill-badge">Internet of Things</div>
+            <div class="skill-badge">Git & GitHub</div>
         </div>
 
         <h2 class="section-title">Featured Projects</h2>
-        <div class="project-card">
-            <h3>Personal Developer Hub</h3>
-            <p>A minimalist, high-performance developer portfolio built from scratch.</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Smart Hub Dashboard</h3>
+                <p>Web-based interface for live system tracking.</p>
+            </div>
+            <div class="project-card">
+                <h3>Dynamic Web Engine</h3>
+                <p>Client-side logic and real-time data processing.</p>
+            </div>
         </div>
 
-        <a href="index.html" class="back-btn">← Back to Main Hub</a>
+        <a href="index.html" class="back-link">← Back to Main Hub</a>
     </div>
-
 </body>
 </html>
