@@ -3,90 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Portfolio | PIYUSH LAKHERA</title>
+    <title>Tech Portfolio | Piyush Lakhera</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
         body { background-color: #020617; color: #ffffff; padding: 40px 20px; }
         .container { max-width: 800px; margin: 0 auto; text-align: center; }
 
-        /* LIVE INFO STYLES */
-        .live-info { color: #ffffff; font-size: 20px; margin-bottom: 24px; }
-
+        .live-info { color: #ffffff; font-size: 20px; margin-bottom: 20px; font-weight: bold; }
         header { margin-bottom: 50px; }
         h1 { font-size: 40px; color: #38bdf8; margin-bottom: 10px; }
-
         .section-title { font-size: 16px; color: #64748b; margin: 30px 0; text-transform: uppercase; border-bottom: 1px solid #1e293b; padding-bottom: 5px; text-align: left; }
-        
+       
         .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .project-card { background: #0f172a; border: 2px solid transparent; padding: 25px; border-radius: 16px; text-align: left; transition: all 0.4s ease !important; }
+        .project-card:hover { border-color: #38bdf8 !important; background: #1e293b !important; box-shadow: 0 0 20px rgba(56, 189, 248, 0.3) !important; transform: translateY(-10px) !important; }
         
-        .project-card { 
-            background: #0f172a; 
-            border: 2px solid transparent; 
-            padding: 25px; 
-            border-radius: 16px; 
-            text-align: left; 
-            transition: all 0.4s ease !important; 
-        }
-        
-        .project-card:hover { 
-            border-color: #38bdf8 !important; 
-            background: #1e293b !important; 
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.3) !important; 
-            transform: translateY(-10px) !important; 
-        }
-        
-        .project-card h3 { color: #ffffff; margin-bottom: 10px; }
-        .project-card p { color: #ffffff; font-size: 14px; margin-bottom: 20px; }
-
-        .connect-btn {
-            display: inline-block;
-            margin-top: 50px;
-            padding: 12px 24px;
-            background: transparent;
-            border: 1px solid #38bdf8;
-            color: #38bdf8;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: all 0.4s ease;
-        }
-
-        .connect-btn:hover {
-            background: #38bdf8;
-            color: #020617;
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
-            transform: translateY(-3px);
+        .connect-btn { display: inline-block; margin-top: 50px; padding: 12px 24px; background: transparent; border: 1px solid #38bdf8; color: #38bdf8; text-decoration: none; border-radius: 8px; font-weight: bold; transition: all 0.4s ease; }
+        .connect-btn:hover { background: #38bdf8; color: #020617; box-shadow: 0 0 20px rgba(56, 189, 248, 0.6); transform: translateY(-3px); }
+        .nav-link { 
+        color: #38bdf8; text-decoration: none; font-weight: bold; 
+        padding: 10px 20px; border: 1px solid #38bdf8; border-radius: 8px;
         }
     </style>
+      
 </head>
 <body>
+    <div style="margin-top: 30px;">
+    <a href="event.html" style="color: #a78bfa; margin-right: 20px; text-decoration: none;">View Event Portfolio</a>
+    <a href="tech.html" style="color: #38bdf8; text-decoration: none;">View Tech Portfolio</a>
+</div>
     <div class="container">
-        <!-- LIVE DATE & TIME -->
         <div class="live-info">
-            <span id="live-date"></span> | <span id="live-clock">00:00:00</span>
-            <div class="live-info">
-    <span id="live-date"></span> | 
-    <span id="live-clock">00:00:00</span> | 
-    <span id="weather">☀️ 35°C</span> 
+            <span id="live-date"></span> | <span id="live-clock">00:00:00</span> | <span>☀️ 35°C</span>
         </div>
-
         <header>
-            <h1>PIYUSH LAKHERA</h1>
-            <p>B.TECH COMPUTER SCIENCE INTERNET OF THINGS</p>
+            <h1>Piyush Lakhera</h1>
+            <p>B.Tech Computer Science & Internet of Things</p>
         </header>
 
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
-            <div class="project-card">
-                <h3>Smart Hub Dashboard</h3>
-                <p>Web-based interface for live system tracking.</p>
-            </div>
-            <div class="project-card">
-                <h3>Dynamic Web Engine</h3>
-                <p>Client-side logic and real-time data processing.</p>
-            </div>
+            <div class="project-card"><h3>Smart Hub Dashboard</h3><p>Web-based interface for live system tracking.</p></div>
+            <div class="project-card"><h3>Dynamic Web Engine</h3><p>Client-side logic and real-time data processing.</p></div>
         </div>
-
+        <div style="margin-top: 50px;">
+    <h3 style="color: #64748b; margin-bottom: 20px; font-size: 14px; text-transform: uppercase;">Choose Your Destination</h3>
+    <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 30px;">
+         <a href="tech.html" class="nav-link">Tech Portfolio</a>
+        <a href="event.html" class="nav-link">Event Portfolio</a>
+    </div>
+</div>
         <a href="#" class="connect-btn">Let's Connect</a>
     </div>
 

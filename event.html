@@ -2,126 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Portfolio| Piyush Lakhera</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Event Work Portfolio | Piyush Lakhera</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #020617; color: #ffffff; padding: 50px 20px; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; }
+
+        /* Professional Header */
+        h1 { color: #a78bfa; font-size: 3rem; margin-bottom: 10px; }
+        .subtitle { color: #94a3b8; font-size: 1.2rem; margin-bottom: 50px; }
+        
+        .section-header { color: #64748b; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 30px; letter-spacing: 1px; }
+
+        /* Experience Cards */
+        .exp-card { margin-bottom: 40px; padding-left: 20px; border-left: 2px solid #38bdf8; }
+        .exp-card h3 { color: #f8fafc; margin-bottom: 8px; }
+        .exp-card p { color: #cbd5e1; font-size: 15px; }
+        .highlight { color: #f472b6; font-weight: bold; }
+
+        /* The Box with Hover Effect */
+        .work-box { 
+            background: #0f172a; border: 1px solid #1e293b; padding: 25px; 
+            border-radius: 12px; transition: all 0.4s ease; margin-top: 20px;
         }
-        body {
-            background-color: #09090b;
-            color: #ffffff;
-            min-height: 100vh;
-            padding: 40px 20px;
-        }
-        .container {
-            max-width: 750px;
-            margin: 0 auto;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        header h1 {
-            font-size: 36px;
-            font-weight: 700;
-            background: linear-gradient(135deg, #d946ef, #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
-        }
-        header p {
-            color: #71717a;
-            font-size: 16px;
-        }
-        .section-title {
-            font-size: 18px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #a1a1aa;
-            margin-bottom: 20px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            padding-bottom: 8px;
-        }
-        .expertise-card {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 25px;
-            border-radius: 16px;
-            margin-bottom: 20px;
-            transition: transform 0.2s ease, border-color 0.2s ease;
-        }
-        .expertise-card:hover {
-            border-color: rgba(217, 70, 239, 0.3);
-            transform: translateY(-2px);
-        }
-        .expertise-card h3 {
-            font-size: 19px;
-            color: #f4f4f5;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .expertise-card p {
-            color: #a1a1aa;
-            font-size: 15px;
-            line-height: 1.6;
-        }
-        .highlight-text {
-            color: #d946ef;
-            font-weight: 600;
-        }
-        .back-btn {
-            display: inline-block;
-            margin-top: 30px;
-            color: #71717a;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        .back-btn:hover {
-            color: #ffffff;
-        }
+        .work-box:hover { border-color: #a78bfa; background: #1e293b; transform: scale(1.02); }
+
+        /* Navigation Link */
+        .back-link { display: inline-block; margin-top: 40px; color: #38bdf8; text-decoration: none; font-weight: bold; }
+        .back-link:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <!-- Header -->
-        <header>
-            <h1>Event Work Portfolio</h1>
-            <p>Live Visuals & Technical Coordination</p>
-        </header>
+        <h1>Event Work Portfolio</h1>
+        <p class="subtitle">Live Visuals & Technical Coordination</p>
 
-        <!-- Experience Section -->
-        <h2 class="section-title">My Real Work Experiences</h2>
-        
-        <!-- Box 1: VJ Operations -->
-        <div class="expertise-card">
-            <h3><span>🎬</span> Live Visuals & VJ Software</h3>
-            <p>Learning and operating professional software like <span class="highlight-text">Resolume Arena 7</span> to control live visuals and graphics on LED screens for events and shows.</p>
+        <h2 class="section-header">MY REAL WORK EXPERIENCES</h2>
+
+        <div class="exp-card">
+            <h3>🎥 Live Visuals & VJ Software</h3>
+            <p>Learning and operating professional software like <span class="highlight">Resolume Arena 7</span> to control live visuals and graphics on LED screens for events and shows.</p>
         </div>
 
-        <!-- Box 2: Technical Work (Jabalpur CM Visit) -->
-        <div class="expertise-card">
-            <h3><span>⚡</span> Technical & Visual Setup (Jabalpur)</h3>
+        <div class="exp-card">
+            <h3>⚡ Technical & Visual Setup (Jabalpur)</h3>
             <p>Assisted in managing the technical and visual screens setup during the official event for the Chief Minister's visit to Jabalpur.</p>
         </div>
 
-        <!-- Box 3: Work Trip (Puri, Odisha) -->
-        <div class="expertise-card">
-            <h3><span>🏗️</span> On-Site Event Work (Puri Project)</h3>
+        <div class="work-box">
+            <h3>🏢 On-Site Event Work (Puri Project)</h3>
             <p>Travelled to Puri, Odisha, and worked continuously for 20 days on the ground to manage event production and screen layouts.</p>
         </div>
 
-        <!-- Back to Home Link -->
-        <a href="index.html" class="back-btn">← Back to Main Hub</a>
+        <a href="index.html" class="back-link">← Back to Main Hub</a>
     </div>
-
 </body>
 </html>

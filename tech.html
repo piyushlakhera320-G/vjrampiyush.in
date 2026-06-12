@@ -2,63 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Portfolio | Piyush Lakhera</title>
+    <title>Tech Projects | Piyush Lakhera</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-        body { background: #020617; color: #ffffff; min-height: 100vh; padding: 40px 20px; }
-        .container { max-width: 800px; margin: 0 auto; text-align: center; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #020617; color: #ffffff; padding: 50px 20px; }
+        .container { max-width: 800px; margin: 0 auto; }
 
-        header { margin-bottom: 50px; }
-        h1 { font-size: 42px; font-weight: 700; color: #38bdf8; margin-bottom: 8px; }
-        p { color: #94a3b8; font-size: 15px; }
-
-        .section-title { font-size: 17px; font-weight: 600; color: #64748b; text-transform: uppercase; margin: 35px 0 15px 0; border-bottom: 1px solid #1e293b; padding-bottom: 8px; text-align: left; }
-        
-        /* Badges Styling */
-        .skills-container { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 30px; }
-        .skill-badge { background: #0f172a; border: 1px solid #334155; padding: 10px 20px; border-radius: 30px; font-size: 14px; transition: 0.3s; cursor: pointer; }
-        .skill-badge:hover { border: 1px solid #38bdf8; background: #1e293b; box-shadow: 0 0 10px rgba(56, 189, 248, 0.3); }
-
-        /* Projects Grid */
-        .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .project-card { background: #0f172a; border: 2px solid #1e293b; padding: 25px; border-radius: 16px; text-align: left; transition: 0.4s; }
-        .project-card:hover { border: 2px solid #38bdf8; box-shadow: 0 0 20px rgba(56, 189, 248, 0.3); transform: translateY(-5px); }
-        
-        .project-card h3 { color: #ffffff; margin-bottom: 8px; }
-        .project-card p { font-size: 14px; color: #94a3b8; }
+        h1 { color: #38bdf8; font-size: 3rem; margin-bottom: 20px; }
+        .card { 
+            background: #0f172a; border: 1px solid #1e293b; padding: 25px; 
+            border-radius: 16px; margin-bottom: 20px; transition: all 0.4s ease; 
+        }
+        .card:hover { border-color: #38bdf8; background: #1e293b; transform: scale(1.02); }
         
         .back-link { display: inline-block; margin-top: 40px; color: #64748b; text-decoration: none; }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Piyush Lakhera</h1>
-            <p>Technical Portfolio — B.Tech Computer Science & Internet of Things</p>
-        </header>
-
-        <h2 class="section-title">Core Technologies</h2>
-        <div class="skills-container">
-            <div class="skill-badge">HTML5</div>
-            <div class="skill-badge">CSS3</div>
-            <div class="skill-badge">JavaScript</div>
-            <div class="skill-badge">Internet of Things</div>
-            <div class="skill-badge">Git & GitHub</div>
+        <h1>Tech Projects</h1>
+        <div class="card">
+            <h3>C++ Development</h3>
+            <p>Engaged in competitive programming and system architecture using C++.</p>
         </div>
-
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Smart Hub Dashboard</h3>
-                <p>Web-based interface for live system tracking.</p>
-            </div>
-            <div class="project-card">
-                <h3>Dynamic Web Engine</h3>
-                <p>Client-side logic and real-time data processing.</p>
-            </div>
+        <div class="card">
+            <h3>IoT & Computer Science</h3>
+            <p>Focusing on Internet of Things integration and smart system designs.</p>
         </div>
-
         <a href="index.html" class="back-link">← Back to Main Hub</a>
     </div>
 </body>

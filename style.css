@@ -1,88 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Portfolio | Piyush Lakhera</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
-        body { background-color: #020617; color: #ffffff; padding: 40px 20px; }
-        .container { max-width: 800px; margin: 0 auto; text-align: center; }
-
-        header { margin-bottom: 50px; }
-        h1 { font-size: 40px; color: #38bdf8; margin-bottom: 10px; }
-
-        .section-title { font-size: 16px; color: #64748b; margin: 30px 0; text-transform: uppercase; border-bottom: 1px solid #1e293b; padding-bottom: 5px; text-align: left; }
-        
-        .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        
-        .project-card { 
-            background: #0f172a; 
-            border: 2px solid transparent; 
-            padding: 25px; 
-            border-radius: 16px; 
-            text-align: left; 
-            transition: all 0.4s ease !important; 
-        }
-        
-        .project-card:hover { 
-            border-color: #740d7f !important; 
-            background: #0a4db8 !important; 
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.3) !important; 
-            transform: translateY(-10px) !important; 
-        }
-        
-        .project-card h3 { color: #ffffff; margin-bottom: 10px; }
-        .project-card p { color: #ffffff; font-size: 14px; margin-bottom: 20px; }
-
-        /* BUTTON STYLE - YAHAN SE HAIN CHANGES */
-        .connect-btn {
-            display: inline-block;
-            margin-top: 50px;
-            padding: 12px 24px;
-            background: transparent;
-            border: 1px solid #3d024a;
-            color: #51086e;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: all 0.4s ease;
-        }
-
-        .connect-btn:hover {
-            background: #8912ff;
-            color: #000000;
-            box-shadow: 0 0 20px rgb(255, 255, 255);
-            transform: translateY(-3px);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Piyush Lakhera</h1>
-            <p>B.Tech Computer Science & Internet of Things</p>
-        </header>
-
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Smart Hub Dashboard</h3>
-                <p>Web-based interface for live system tracking.</p>
-            </div>
-            .live-info { 
-    color: #ffffff; /* Thoda bright color */
-    font-size: 20px; /* Jo tumne manga */
-    margin-bottom: 20px; 
-    font-weight: bold;
-}
-            <div class="project-card">
-                <h3>Dynamic Web Engine</h3>
-                <p>Client-side logic and real-time data processing.</p>
-            </div>
-        </div>
-
-        <a href="#" class="connect-btn">Let's Connect</a>
-    </div>
-</body>
-</html>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+body { background-color: #020617; color: #ffffff; padding: 40px 20px; }
+.container { max-width: 800px; margin: 0 auto; text-align: center; }
+header { margin-bottom: 50px; }
+h1 { font-size: 40px; color: #38bdf8; margin-bottom: 10px; }
+.section-title { font-size: 16px; color: #64748b; margin: 30px 0; text-transform: uppercase; }
+.projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.project-card { background: #0f172a; border: 2px solid transparent; padding: 25px; border-radius: 16px; text-align: left; transition: all 0.4s ease; }
+.project-card:hover { background: #1e293b; border: 2px solid #38bdf8; }
